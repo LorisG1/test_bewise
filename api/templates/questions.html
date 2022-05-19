@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebService</title>
+</head>
+
+<body>
+    <form action="{{ url_for('get_quiz') }}" method="POST">
+        <label>Number of questions</label>
+        <input name="questions_num" type="number" min="1">
+        <button type="submit">Get questions</button>
+    </form>
+</body>
+
+</html>
